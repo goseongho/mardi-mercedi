@@ -1,0 +1,202 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root {
+  --font-kr: "Noto Sans KR", sans-serif;
+  --font-en: "Poppins", sans-serif;
+}
+body{
+  font-family: var(--font-en);
+  font-size: 15px;
+}
+/* Header */
+.HeaderInner .TopBanner{
+  text-align: center;
+  height: 35px;
+  line-height: 35px;
+  background-color: #000;
+  color: #fff;
+  font-size: 0.85rem;
+}
+.HeaderInner .Nav{
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+  line-height: 70px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #ebebbe;
+  width: 95%;
+  margin: auto;
+}
+.Nav .logo{
+  line-height: 80px;
+}
+.Nav .logo img{
+}
+.Nav ul{
+  display: flex;
+  width: 20%;
+  justify-content: space-between;
+  gap: 30px ;
+}
+.Nav li{
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.Nav li:hover{
+  color: #E60012;
+}
+.Nav .User{
+  font-size: 14px;
+  display: flex;
+}
+.Nav .User .Login{
+  font-family: var(--font-kr);
+  font-size: 0.9rem;
+}
+.Nav .User .Search{
+}
+.Nav .User form{
+  width: 200px; height: 20px;
+  position: relative;
+}
+.Nav .User form img{
+  position: absolute;
+  right: 1px;
+  width: 15px;
+  top: 140%;
+  transform: translate(-140%);
+  cursor: pointer;
+}
+.User input{
+  margin-left: 10px;
+  height: 100%;
+  border: 1px solid #dedeed;
+}
+.User input::placeholder{
+  font-size: 12px;
+  font-family: var(--font-kr);
+  padding-left: 5px;
+}
+/* MainVisual */
+/* ProductAll */
+.ProductAll{
+
+}
+.ProductAllInner{
+  width: 1300px;
+  padding-top: 10px;
+  padding-bottom: 50px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* gap: 20px; */
+}
+/* ProductCard */
+.ProductCard{
+  line-height: 19px;
+  margin-top: 15px;
+  width: 23%;
+}
+.ProductCard img{
+  width: 100%;
+  cursor: pointer;
+}
+.ProductCard h3{
+  font-size: 13px;
+}
+.ProductCard h2{
+  font-weight: 600;
+  font-size: 14px;
+}
+.ProductCard p{
+  margin-top: 5px;
+}
+/* Login */
+.Login{
+  width: 50%;
+  margin: 5rem auto;
+  height: 55.5vh;
+}
+.Login h3{
+  text-align: center;
+  font-size: 2rem;
+  width: auto;
+  background-color: #000;
+  color: #fff;
+  padding: 0.9rem;
+  border-radius: 8px;
+  border: 1px solid #000;
+}
+.Login form {
+  padding-top: 5rem;
+}
+.Login form input{
+  margin-top: 1rem;
+}
+.Login form input[type="email"],
+.Login form input[type="password"]
+{
+  width: 99%;
+  padding: 5px;
+  margin-bottom: 1rem;
+  border: none;
+  border-bottom: 1px solid #9A9A9A;
+}
+.Login form input::placeholder{
+  color: #9A9A9A;
+}
+.Login button{
+  width: 100%;
+  border: none;
+  padding: 10px;
+  margin-top: 80px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.Login button:hover{
+  background-color: #dbdada;
+}
+/* ProductDetail */
+.ProductDetailInner{
+  width: 1300px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+.ProductDetailInner .detailLeft{
+  flex: 1;
+}
+.ProductDetailInner .detailLeft img{
+  width: 100%;
+}
+.ProductDetailInner .detailRight{
+  line-height: 30px;
+  width: 100%;
+  flex: 1;
+}
+.ProductDetailInner .detailRight h3{
+  font-weight: 500;
+  font-size: 1rem;
+}
+.ProductDetailInner .detailRight p{
+  font-weight: 500;
+}
+.ProductDetailInner .detailRight select{
+  display: block;
+}
+.ProductDetailInner .detailRight button{}
+/* Footer */
+.Footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;  
+  background-color: #F6F6F6;
+}
+.Footer p{
+  padding: 3rem;
+}
